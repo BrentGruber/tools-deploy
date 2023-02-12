@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: argo
-  namespace: argocd
+  namespace: argo
 spec:
   destination:
     name: ''
@@ -12,7 +12,7 @@ spec:
     path: argo/argocd
     repoURL: 'https://github.com/BOM-DEMO/tools-deploy.git'
     targetRevision: HEAD
-  project: default
+  project: bom-demo
   syncPolicy:
     automated:
       prune: true
