@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: doppler-operator
-  namespace: argo
+  namespace: argocd
 spec:
   destination:
     name: ''
@@ -16,7 +16,7 @@ spec:
     helm:
       valueFiles:
         - values.yaml
-  project: bom-demo
+  project: default
   syncPolicy:
     automated:
       prune: true

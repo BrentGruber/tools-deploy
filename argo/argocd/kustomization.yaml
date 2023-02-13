@@ -8,4 +8,4 @@ patchesStrategicMerge:
   - patch.yaml
   - configmap.yaml
 
-namespace: argo
+namespace: argocd
