@@ -1,0 +1,6 @@
+resources:
+  - argocd.yaml
+  - doppler-operator.yaml
+  - secret.yaml
+
+namespace: argocd
