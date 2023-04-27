@@ -1,0 +1,6 @@
+helmChartInflationGenerator:
+  - chartRepoUrl: https://aws.github.io/eks-charts
+    chartName: aws-load-balancer-controller
+    releaseName: alb-controller
+    releaseNamespace: alb-controller
+    values: values.yaml

@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: alb-controller
+  namespace: argocd
+spec:
+  destination:
+    name: ''
+    namespace: alb-controller
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: aws-load-balancer-controller
+    repoURL: 'https://github.com/BOM-DEMO/tools-deploy.git'
+    targetRevision: HEAD
+  project: bom-demo
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
