@@ -6,5 +6,4 @@ serviceAccount:
 # https://github.com/cert-manager/cert-manager/issues/3237
 webhook:
   hostNetwork: true
-  config:
-    securePort: 10260
+  securePort: 10260
