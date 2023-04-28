@@ -4,3 +4,5 @@ helmChartInflationGenerator:
     releaseName: external-dns
     releaseNamespace: external-dns
     values: values.yaml
+
+namespace: external-dns
