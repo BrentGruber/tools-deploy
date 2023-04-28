@@ -2,6 +2,7 @@ resources:
   - apps.yaml
   - argocd.yaml
   - doppler-operator.yaml
+  - external-dns.yaml
   - secret.yaml
   - nginx.yaml
 

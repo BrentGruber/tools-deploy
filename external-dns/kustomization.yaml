@@ -1,0 +1,6 @@
+helmChartInflationGenerator:
+  - chartRepoUrl: https://charts.bitnami.com/bitnami
+    chartName: external-dns
+    releaseName: external-dns
+    releaseNamespace: external-dns
+    values: values.yaml
