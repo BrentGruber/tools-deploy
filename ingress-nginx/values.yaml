@@ -1,5 +1,4 @@
 controller:
-  kind: Daemonset
   service:
     type: LoadBalancer
     externalTrafficPolicy: Local
