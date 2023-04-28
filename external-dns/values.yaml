@@ -5,4 +5,3 @@ serviceAccount:
 provider: aws
 aws:
   region: us-east-2
-  assumeRoleArn: arn:aws:iam::593393184947:role/external-dns-c254ec8
