@@ -16,7 +16,6 @@ spec:
     # example: cross-account zone management for example.com
     # this solver uses ambient credentials (i.e. inferred from the environment or EC2 Metadata Service)
     # to assume a role in a different account
-    - dns01:
-        route53:
-          region: us-east-1
-          hostedZoneID: Z039980132D60LOSACQSM
+    - http01:
+        ingress:
+          class: nginx
