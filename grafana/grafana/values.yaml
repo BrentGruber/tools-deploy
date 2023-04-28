@@ -3,7 +3,7 @@ ingress:
   ingressClassName: nginx
   annotations: {
     nginx.ingress.kubernetes.io/ssl-redirect: "false",
-    cert-manager.io/cluster-issuer: letsencrypt-dev
+    cert-manager.io/cluster-issuer: letsencrypt
   }
   labels: {}
   path: /
