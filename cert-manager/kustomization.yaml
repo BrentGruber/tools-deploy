@@ -1,8 +1,4 @@
-helmChartInflationGenerator:
-  - chartRepoUrl: https://charts.jetstack.io
-    chartName: cert-manager
-    releaseName: cert-manager
-    releaseNamespace: cert-manager
-    values: values.yaml
+generators:
+- helm-chart.yaml
 
 namespace: cert-manager
