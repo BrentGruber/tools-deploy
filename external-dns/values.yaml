@@ -3,4 +3,5 @@ serviceAccount:
   name: external-dns
 
 provider: aws
+aws:
   region: us-east-2
