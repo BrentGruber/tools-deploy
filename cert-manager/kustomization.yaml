@@ -4,6 +4,3 @@ helmChartInflationGenerator:
     releaseName: cert-manager
     releaseNamespace: cert-manager
     values: values.yaml
-
-resources:
-  - clusterIssuer.yaml
