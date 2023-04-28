@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argo
+  name: external-dns
   namespace: argocd
 spec:
   destination:
     name: ''
-    namespace: argocd
+    namespace: external-dns
     server: 'https://kubernetes.default.svc'
   source:
     path: external-dns
