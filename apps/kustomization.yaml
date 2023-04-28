@@ -1,7 +1,7 @@
 resources:
   - apps.yaml
   - argocd.yaml
-  - cert-manager.yaml
+  # - cert-manager.yaml
   - doppler-operator.yaml
   - external-dns.yaml
   - secret.yaml
