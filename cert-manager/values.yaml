@@ -4,6 +4,9 @@ serviceAccount:
   name: cert-manager
 
 # https://github.com/cert-manager/cert-manager/issues/3237
-webhook:
-  hostNetwork: true
-  securePort: 10260
+# webhook:
+#   hostNetwork: true
+#   securePort: 10260
+
+leaderElection:
+  namespace: cert-manager
