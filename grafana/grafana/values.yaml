@@ -1,0 +1,19 @@
+ingress:
+  enabled: true
+  ingressClassName: nginx
+  annotations: {
+    nginx.ingress.kubernetes.io/ssl-passthrough: "true",
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+  }
+  labels: {}
+  path: /
+
+  pathType: Prefix
+
+  hosts:
+    - grafana.tools.bomdemo.com
+  
+  tls:
+    - hosts:
+      - grafana.tools.bomdemo.com
+      secretName: grafana-cert

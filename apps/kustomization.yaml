@@ -4,6 +4,7 @@ resources:
   - cert-manager.yaml
   - doppler-operator.yaml
   - external-dns.yaml
+  - grafana.yaml
   - secret.yaml
   - nginx.yaml
 
