@@ -1,0 +1,10 @@
+# https://github.com/kubernetes-sigs/kustomize/issues/4593
+apiVersion: builtin
+kind: HelmChartInflationGenerator
+metadata:
+  name: external-dns
+name: external-dns
+namespace: external-dns
+releaseName: external-dns
+repo: https://charts.bitnami.com/bitnami
+valuesFile: values.yaml
