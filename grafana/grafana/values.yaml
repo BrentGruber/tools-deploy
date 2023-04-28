@@ -2,8 +2,7 @@ ingress:
   enabled: true
   ingressClassName: nginx
   annotations: {
-    kubernetes.io/ingress.class: nginx,
-    cert-manager.io/cluster-issuer: letsencrypt
+    kubernetes.io/ingress.class: nginx
   }
   labels: {}
   path: /
@@ -13,7 +12,7 @@ ingress:
   hosts:
     - grafana.tools.bomdemo.com
   
-  tls:
-    - hosts:
-      - grafana.tools.bomdemo.com
-      secretName: grafana-cert
+  # tls:
+  #   - hosts:
+  #     - grafana.tools.bomdemo.com
+  #     secretName: grafana-cert
