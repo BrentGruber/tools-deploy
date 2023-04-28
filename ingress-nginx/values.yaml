@@ -1,2 +1,8 @@
 controller:
   kind: DaemonSet
+  service:
+    type: LoadBalancer
+    annotations:
+      # AWS Load Balancer Controller Annotations
+      service.beta.kubernetes.io/aws-load-balancer-type: nlb
+
