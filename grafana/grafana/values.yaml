@@ -12,7 +12,7 @@ ingress:
   hosts:
     - grafana.tools.bomdemo.com
   
-  # tls:
-  #   - hosts:
-  #     - grafana.tools.bomdemo.com
-  #     secretName: grafana-cert
+  tls:
+    - hosts:
+      - grafana.tools.bomdemo.com
+      secretName: grafana-cert
