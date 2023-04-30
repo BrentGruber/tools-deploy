@@ -5,5 +5,9 @@ controller:
     externalTrafficPolicy: Local
     annotations:
       # AWS Load Balancer Controller Annotations
-      service.beta.kubernetes.io/aws-load-balancer-type: nlb
+      service.beta.kubernetes.io/aws-load-balancer-type: external
+    
+    targetPorts:
+      http: http
+      https: https
 
