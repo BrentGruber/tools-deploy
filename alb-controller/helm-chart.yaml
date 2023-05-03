@@ -1,0 +1,10 @@
+# https://github.com/kubernetes-sigs/kustomize/issues/4593
+apiVersion: builtin
+kind: HelmChartInflationGenerator
+metadata:
+  name: alb-controller
+name: alb-controller
+namespace: alb-controller
+releaseName: alb-controller
+repo: https://aws.github.io/eks-charts
+valuesFile: values.yaml

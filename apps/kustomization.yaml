@@ -1,5 +1,6 @@
 resources:
   - apps.yaml
+  - alb-controller.yaml
   - argocd.yaml
   - cert-manager.yaml
   - doppler-operator.yaml
