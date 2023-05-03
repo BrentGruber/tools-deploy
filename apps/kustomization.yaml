@@ -6,6 +6,6 @@ resources:
   - external-dns.yaml
   - grafana.yaml
   - secret.yaml
-  - nginx.yaml
+  #- nginx.yaml
 
 namespace: argocd
