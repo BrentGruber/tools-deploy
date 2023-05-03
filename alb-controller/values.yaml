@@ -1,7 +1,6 @@
 region: "us-east-2"
 clusterName: bomdemo-tools-eks
 keepTLSSecret: true
-enableCertManager: true
 serviceAccount:
   create: false
   name: alb-controller
