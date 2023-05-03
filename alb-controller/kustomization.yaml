@@ -1,5 +1,5 @@
 resources:
-  - https://raw.githubusercontent.com/aws/eks-charts/master/stable/aws-load-balancer-controller/crds
+  - https://raw.githubusercontent.com/aws/eks-charts/master/stable/aws-load-balancer-controller/crds/crds.yaml
 
 generators:
 - helm-chart.yaml
