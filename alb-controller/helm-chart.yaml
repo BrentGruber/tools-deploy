@@ -3,7 +3,7 @@ apiVersion: builtin
 kind: HelmChartInflationGenerator
 metadata:
   name: alb-controller
-name: alb-controller
+name: aws-load-balancer-controller
 namespace: alb-controller
 releaseName: alb-controller
 repo: https://aws.github.io/eks-charts
