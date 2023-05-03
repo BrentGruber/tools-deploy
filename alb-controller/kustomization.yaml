@@ -1,3 +1,6 @@
+resources:
+  - github.com/aws/eks-charts/stable/aws-load-balancer-controller//crds?ref=master
+
 generators:
 - helm-chart.yaml
 
