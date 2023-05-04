@@ -2,6 +2,7 @@ resources:
   - apps.yaml
   - alb-controller.yaml
   - argocd.yaml
+  - bom.yaml
   - cert-manager.yaml
   - doppler-operator.yaml
   - external-dns.yaml

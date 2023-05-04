@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: bom
+  namespace: argocd
+spec:
+  destination:
+    name: ''
+    namespace: bom
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: .
+    repoURL: 'https://github.com/BOM-DEMO/bom-deploy.git'
+    targetRevision: HEAD
+  project: bom-demo
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
