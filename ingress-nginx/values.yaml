@@ -1,4 +1,7 @@
 controller:
+  containerPort:
+    http: 80
+    https: 80
 
   admissionWebhooks:
     enabled: false
