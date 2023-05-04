@@ -12,9 +12,11 @@ controller:
     externalTrafficPolicy: "Local"
     annotations:
       # AWS Load Balancer Controller Annotations
-      service.beta.kubernetes.io/aws-load-balancer-type: external
+      service.beta.kubernetes.io/aws-load-balancer-type: external  # Allow aws load balancer controller to reconcile service
       service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
       service.beta.kubernetes.io/aws-load-balancer-connection-idle-timeout: '3600'
+      service.beta.kubernetes.io/aws-load-balancer-nlb-target-type: instance
+      service.beta.kubernetes.io/aws-load-balancer-backend-protocol: ssl
 
     
     targetPorts:
