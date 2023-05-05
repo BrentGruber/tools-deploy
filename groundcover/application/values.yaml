@@ -5,6 +5,13 @@ global:
     # the key in the secret containing the token value
     secretKey: GROUNDCOVER_TOKEN
 
+timescaledb-single:
+  secrets:
+    credentials:
+      PATRONI_SUPERUSER_PASSWORD: password
+      PATRONI_REPLICATION_PASSWORD: password
+      PATRONI_admin_PASSWORD: password
+
 loki:
   persistence:
     storageClassName: aws-gp2
