@@ -12,7 +12,10 @@ timescaledb-single:
       PATRONI_REPLICATION_PASSWORD: password
       PATRONI_admin_PASSWORD: password
 
-clusterId: bom-demo-dev
+clusterId: bomdemo-tools-eks
+installationId: "installed"
+commitHashKeyName: "abc"
+repositoryUrlKeyname: "def"
 
 loki:
   persistence:
