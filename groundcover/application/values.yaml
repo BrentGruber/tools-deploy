@@ -5,6 +5,9 @@ global:
     # the key in the secret containing the token value
     secretKey: GROUNDCOVER_TOKEN
 
+saas:
+  tls_skip_verify: true
+
 timescaledb-single:
   persistentVolumes:
     data:
