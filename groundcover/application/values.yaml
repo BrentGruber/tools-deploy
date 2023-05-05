@@ -6,4 +6,5 @@ global:
     secretKey: GROUNDCOVER_TOKEN
 
 loki:
-  storageClassName: aws-gp2
+  persistence:
+    storageClassName: aws-gp2
