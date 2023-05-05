@@ -6,17 +6,23 @@ global:
     secretKey: GROUNDCOVER_TOKEN
 
 timescaledb-single:
+  persistentVolumes:
+    data:
+      enabled: false
+    wal:
+      enabled: false
+
   secrets:
     credentials:
       PATRONI_SUPERUSER_PASSWORD: password
       PATRONI_REPLICATION_PASSWORD: password
       PATRONI_admin_PASSWORD: password
 
-clusterId: bomdemo-tools-eks
-installationId: "installed"
-commitHashKeyName: "abc"
-repositoryUrlKeyname: "def"
-
 loki:
   persistence:
-    storageClassName: aws-gp2
+    enabled: false
+
+victoria-metrics-single:
+  server:
+    persistentVolume:
+      enabled: false
