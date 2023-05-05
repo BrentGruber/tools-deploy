@@ -1,12 +1,15 @@
 global:
   groundcoverPredefinedTokenSecret:
     # the name of the secret
-    secretName: groundcover-doppler-secret
+    secretName: temp-groundcover-secret
     # the key in the secret containing the token value
-    secretKey: GROUNDCOVER_TOKEN
+    secretKey: GROUNDCOVER_KEY
 
 saas:
-  tls_skip_verify: true
+  tls_skip_verify: false
+  scheme: wss
+  host: app.groundcover.com
+  port: 443
 
 timescaledb-single:
   persistentVolumes:
