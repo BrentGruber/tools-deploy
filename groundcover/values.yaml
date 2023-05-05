@@ -1,0 +1,6 @@
+global:
+  groundcoverPredefinedTokenSecret:
+    # the name of the secret
+    secretName: groundcover-doppler-secret
+    # the key in the secret containing the token value
+    secretKey: GROUNDCOVER_TOKEN

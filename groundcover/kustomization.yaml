@@ -1,0 +1,9 @@
+resources:
+  - doppler-secret.yaml
+  - namespace.yaml
+
+generators:
+  - helm-chart.yaml
+
+namespace: groundcover
+

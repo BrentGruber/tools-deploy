@@ -1,0 +1,10 @@
+# https://github.com/kubernetes-sigs/kustomize/issues/4593
+apiVersion: builtin
+kind: HelmChartInflationGenerator
+metadata:
+  name: groundcover
+name: groundcover
+namespace: groundcover
+releaseName: groundcover
+repo: https://helm.groundcover.com
+valuesFile: values.yaml
