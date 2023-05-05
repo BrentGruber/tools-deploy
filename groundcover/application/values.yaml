@@ -12,6 +12,8 @@ timescaledb-single:
       PATRONI_REPLICATION_PASSWORD: password
       PATRONI_admin_PASSWORD: password
 
+clusterId: bom-demo-dev
+
 loki:
   persistence:
     storageClassName: aws-gp2
