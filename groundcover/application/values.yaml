@@ -5,7 +5,7 @@ global:
   #   secretName: temp-groundcover-secret
   #   # the key in the secret containing the token value
   #   secretKey: GROUNDCOVER_KEY
-
+clusterId: bomdemo-cluster
 
 timescaledb-single:
   persistentVolumes:
