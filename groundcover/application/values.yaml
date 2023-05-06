@@ -6,6 +6,11 @@ global:
   #   # the key in the secret containing the token value
   #   secretKey: GROUNDCOVER_KEY
 
+router:
+  # onprem or cloud
+  mode: onprem
+  enabled: false
+
 timescaledb-single:
   persistentVolumes:
     data:
