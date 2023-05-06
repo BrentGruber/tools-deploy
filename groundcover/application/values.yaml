@@ -6,12 +6,6 @@ global:
   #   # the key in the secret containing the token value
   #   secretKey: GROUNDCOVER_KEY
 
-saas:
-  tls_skip_verify: false
-  scheme: wss
-  host: app.groundcover.com
-  port: 443
-
 timescaledb-single:
   persistentVolumes:
     data:
