@@ -8,7 +8,7 @@ global:
 
 router:
   # onprem or cloud
-  mode: onprem
+  mode: cloud
   enabled: true
 
 timescaledb-single:
