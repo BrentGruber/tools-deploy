@@ -9,7 +9,7 @@ global:
 router:
   # onprem or cloud
   mode: onprem
-  enabled: false
+  enabled: true
 
 timescaledb-single:
   persistentVolumes:
