@@ -1,0 +1,9 @@
+apiVersion: builtin
+kind: HelmChartInflationGenerator
+metadata:
+  name: mimir
+name: mimir-distributed
+namespace: monitoring
+releaseName: mimir
+repo: https://grafana.github.io/helm-charts
+valuesFile: values.yaml
