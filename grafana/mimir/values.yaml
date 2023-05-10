@@ -49,6 +49,8 @@ ingester:
     enabled: false
 
 store_gateway:
+  statefulSet:
+    enabled: false
   persistentVolume:
     # If true will create/use a Persistent Volume Claim
     # If false, use emptyDir
