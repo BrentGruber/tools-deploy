@@ -12,6 +12,14 @@ nginx:
           - grafana.tools.bomdemo.com
         secretName: mimir-cert
 
+serviceAccount:
+  # -- Whether to create a service account or not. In case 'create' is false, do set 'name' to an existing service account name.
+  create: false
+  # -- Override for the generated service account name.
+  name: mimir
+  annotations: {}
+
+
 minio:
   enabled: false
 
