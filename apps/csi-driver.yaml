@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: csi-driver
+  namespace: argocd
+spec:
+  destination:
+    name: ''
+    namespace: csi-driver
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: csi-driver
+    repoURL: 'https://github.com/BOM-DEMO/tools-deploy.git'
+    targetRevision: HEAD
+  project: bom-demo
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

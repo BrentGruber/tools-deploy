@@ -4,6 +4,7 @@ resources:
   - argocd.yaml
   - bom.yaml
   - cert-manager.yaml
+  - csi-driver.yaml
   - doppler-operator.yaml
   - external-dns.yaml
   - grafana.yaml

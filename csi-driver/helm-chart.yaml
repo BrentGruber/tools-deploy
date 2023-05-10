@@ -1,0 +1,10 @@
+# https://github.com/kubernetes-sigs/kustomize/issues/4593
+apiVersion: builtin
+kind: HelmChartInflationGenerator
+metadata:
+  name: csi-driver
+name: aws-ebs-csi-driver
+namespace: kube-system
+releaseName: csi-driver
+repo: https://kubernetes-sigs.github.io/aws-ebs-csi-driver
+valuesFile: values.yaml
