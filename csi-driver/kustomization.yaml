@@ -1,11 +1,12 @@
 generators:
 - helm-chart.yaml
 
+# policy/v1beta1 was removed in eks 1.25
 patchesJson6902:
   - target:
-      version: policy/v1beta1
       kind: 'PodDisruptionBudget'
-      name: '.*'
+      name: 'ebs-csi-controller'
+      version: v1beta1
     patch: |-
       - op: replace
         path: "/apiVersion"
