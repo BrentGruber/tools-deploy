@@ -23,12 +23,17 @@ serviceAccount:
 minio:
   enabled: false
 
+alertmanager:
+  statefulSet:
+    enabled: false
+
 mimir:
   structuredConfig:
     alertmanager_storage:
       s3:
         bucket_name: mimir-bomdemo-dev-0585822
         endpoint: s3.us-east-2.amazonaws.com
+    
     blocks_storage:
       backend: s3
       s3:
