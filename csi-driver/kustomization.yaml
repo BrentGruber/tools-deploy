@@ -1,4 +1,14 @@
 generators:
 - helm-chart.yaml
 
+patchesJson6902:
+  - target:
+      version: policy/v1beta1
+      kind: 'PodDisruptionBudget'
+      name: '.*'
+    patch: |-
+      - op: replace
+        path: "/apiVersion"
+        value: policy/v1 
+
 namespace: kube-system
