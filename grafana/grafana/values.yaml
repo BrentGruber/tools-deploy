@@ -17,3 +17,7 @@ ingress:
     - hosts:
       - grafana.tools.bomdemo.com
       secretName: grafana-cert
+
+grafana.ini:
+  auth.anonymous:
+    enabled: true
