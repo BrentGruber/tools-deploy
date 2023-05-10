@@ -6,7 +6,7 @@ metadata:
 spec:
   destination:
     name: ''
-    namespace: csi-driver
+    namespace: kube-system
     server: 'https://kubernetes.default.svc'
   source:
     path: csi-driver
