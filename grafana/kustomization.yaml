@@ -1,6 +1,7 @@
 resources:
   - namespace.yaml
   - ./grafana
+  - ./loki
   - ./mimir
 
 namespace: monitoring
