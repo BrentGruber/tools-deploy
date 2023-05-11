@@ -22,3 +22,14 @@ grafana.ini:
   auth.anonymous:
     enabled: true
     org_role: Admin
+
+# Configure Grafana data sources
+datasources:
+  datasources.yaml:
+    apiVersion: 1
+    datasources:
+    - name: Mimir
+      type: prometheus
+      url: http://mimir-nginx.monitoring.svc.cluster.local  # TODO: how to manage this value with multiple clusters
+      jsonData:
+        tlsSkipVerify: true
