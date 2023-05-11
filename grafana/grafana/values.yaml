@@ -28,8 +28,9 @@ datasources:
   datasources.yaml:
     apiVersion: 1
     datasources:
+      #TODO: Could probably have a way to have data sources configure themselves
     - name: Mimir
       type: prometheus
-      url: http://mimir-nginx.monitoring.svc.cluster.local  # TODO: how to manage this value with multiple clusters
+      url: http://mimir-nginx.monitoring.svc.cluster.local
       jsonData:
         tlsSkipVerify: true
