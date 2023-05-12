@@ -29,6 +29,7 @@ monitoring:
     enabled: true
     metricsInstance:
       enabled: true
+      remoteWrite: http://mimir-nginx.monitoring.svc.cluster.local/prometheus/api/v1/push
   selfMonitoring:
     grafanaAgent:
       installOperator: false
