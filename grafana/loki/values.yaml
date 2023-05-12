@@ -1,4 +1,17 @@
 #TODO: probably need more than defaults
+loki:
+  storage:
+    bucketNames:
+      chunks: loki-bomdemo-dev-8fa1c75
+      ruler: loki-bomdemo-dev-8fa1c75
+      admin: loki-bomdemo-dev-8fa1c75
+    type: s3
+    s3:
+      endpoint: s3.us-east-2.amazonaws.com
+      region: us-east-2
+
+minio:
+  enabled: false
 
 serviceAccount:
   create: false
