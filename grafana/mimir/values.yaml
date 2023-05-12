@@ -43,8 +43,13 @@ mimir:
 metaMonitoring:
   grafanaAgent:
     enabled: true
-  metrics:
-    labels:
-      agent: grafana-agent-metrics
+    logs:
+      enabled: true
+      remote:
+        url: http://loki-gateway.monitoring.svc.cluster.local/loki/api/v1/push
+    metrics:
+      enabled: true
+      labels:
+        agent: grafana-agent-metrics
 
 
