@@ -1,7 +1,5 @@
 generators:
 - helm-chart.yaml
 
-commonLabels:
-  app.kubernetes.io/instance: mimir
 
 namespace: monitoring
