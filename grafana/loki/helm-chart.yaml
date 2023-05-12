@@ -7,3 +7,5 @@ namespace: monitoring
 releaseName: loki
 repo: https://grafana.github.io/helm-charts
 valuesFile: values.yaml
+apiVersions: 
+  - monitoring.grafana.com/v1alpha1/MetricsInstance
