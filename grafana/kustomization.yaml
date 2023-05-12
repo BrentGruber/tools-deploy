@@ -2,7 +2,7 @@ resources:
   - namespace.yaml
   - ./agent
   - ./grafana
-  - ./loki
+  #- ./loki
   - ./mimir
 
 namespace: monitoring
