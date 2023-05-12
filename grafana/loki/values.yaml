@@ -7,7 +7,6 @@ loki:
       admin: loki-bomdemo-dev-8fa1c75
     type: s3
     s3:
-      endpoint: s3.us-east-2.amazonaws.com
       region: us-east-2
 
 backend:
