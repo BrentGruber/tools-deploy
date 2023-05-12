@@ -40,3 +40,8 @@ mimir:
         bucket_name: mimir-bomdemo-dev-0585822
         endpoint: s3.us-east-2.amazonaws.com
 
+metaMonitoring:
+  grafanaAgent:
+    enabled: true
+    
+
