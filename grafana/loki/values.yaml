@@ -25,3 +25,23 @@ monitoring:
   selfMonitoring:
     grafanaAgent:
       installOperator: false
+
+ingress:
+  enabled: true
+  ingressClassName: nginx
+  annotations: {
+    kubernetes.io/ingress.class: nginx,
+    cert-manager.io/cluster-issuer: letsencrypt
+  }
+  labels: {}
+  path: /
+
+  pathType: Prefix
+
+  hosts:
+    - loki.tools.bomdemo.com
+  
+  tls:
+    - hosts:
+      - loki.tools.bomdemo.com
+      secretName: loki-cert
