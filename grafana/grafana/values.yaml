@@ -34,3 +34,8 @@ datasources:
       url: http://mimir-nginx.monitoring.svc.cluster.local
       jsonData:
         tlsSkipVerify: true
+    - name: Loki
+      type: loki
+      url: http://loki-gateway.monitoring.svc.cluster.local
+      jsonData:
+        tlsSkipVerify: true
