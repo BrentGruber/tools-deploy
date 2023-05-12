@@ -23,6 +23,12 @@ serviceAccount:
   name: loki
 
 monitoring:
+  dashboards:
+    enabled: true
+  serviceMonitor:
+    enabled: true
+    metricsInstance:
+      enabled: true
   selfMonitoring:
     grafanaAgent:
       installOperator: false
