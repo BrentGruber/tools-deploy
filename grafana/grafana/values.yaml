@@ -23,6 +23,12 @@ grafana.ini:
     enabled: true
     org_role: Admin
 
+sidecar:
+  dashboards:
+    enabled: true
+    label: grafana_dashboard
+    labelValue: "1"
+
 # Configure Grafana data sources
 datasources:
   datasources.yaml:
