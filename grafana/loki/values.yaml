@@ -26,6 +26,9 @@ monitoring:
   selfMonitoring:
     grafanaAgent:
       installOperator: false
+    logsInstance:
+      labels:
+        agent: grafana-agent-logs
 
 ingress:
   enabled: true

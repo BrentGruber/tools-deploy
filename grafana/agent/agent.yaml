@@ -17,8 +17,6 @@ spec:
     instanceSelector:
       matchLabels:
         agent: grafana-agent-metrics
-    externalLabels:
-      cluster: cloud
 
   logs:
     instanceSelector:
