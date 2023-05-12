@@ -1,5 +1,6 @@
 resources:
   - namespace.yaml
+  - ./agent
   - ./grafana
   - ./loki
   - ./mimir

@@ -1,0 +1,9 @@
+apiVersion: builtin
+kind: HelmChartInflationGenerator
+metadata:
+  name: gfagent
+name: grafana-agent-operator
+namespace: monitoring
+releaseName: gfagent
+repo: https://grafana.github.io/helm-charts
+valuesFile: values.yaml
