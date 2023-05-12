@@ -26,7 +26,9 @@ monitoring:
   dashboards:
     enabled: true
   serviceMonitor:
+    # -- If enabled, ServiceMonitor resources for Prometheus Operator are created
     enabled: true
+    interval: 20s
     metricsInstance:
       enabled: true
       remoteWrite: http://mimir-nginx.monitoring.svc.cluster.local/prometheus/api/v1/push
