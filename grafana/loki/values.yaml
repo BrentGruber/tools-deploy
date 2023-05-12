@@ -1,5 +1,6 @@
 #TODO: probably need more than defaults
 loki:
+  auth_enabled: false
   storage:
     bucketNames:
       chunks: loki-bomdemo-dev-8fa1c75
