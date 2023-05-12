@@ -43,5 +43,8 @@ mimir:
 metaMonitoring:
   grafanaAgent:
     enabled: true
-    
+    metrics:
+      labels:
+        agent: grafana-agent-metrics
+
 
