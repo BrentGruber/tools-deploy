@@ -1,11 +1,12 @@
 generators:
 - helm-chart.yaml
 
-commonLabels:
-  # This is being set to grafana for some reason
-  # my best guess is that it all comes from a single kustomize
-  # one directory above this. but it messes up the default
-  # meta monitoring for the grafana products.
-  app.kubernetes.io/instance: loki 
+patches:
+  - target:
+      kind: 'LogsInstance'
+    patch: |-
+      - op: replace
+        path: "/labels/app.kubernetes.io/instance"
+        value: loki
 
 namespace: monitoring
