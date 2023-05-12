@@ -4,5 +4,7 @@ serviceAccount:
   create: false
   name: loki
 
-grafanaAgent:
-  installOperator: false
+monitoring:
+  selfMonitoring:
+    grafanaAgent:
+      installOperator: false
