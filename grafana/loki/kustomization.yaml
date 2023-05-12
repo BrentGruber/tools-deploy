@@ -1,12 +1,5 @@
 generators:
 - helm-chart.yaml
 
-patches:
-  - target:
-      kind: 'LogsInstance'
-    patch: |-
-      - op: replace
-        path: "/labels/app.kubernetes.io/instance"
-        value: loki
 
 namespace: monitoring
