@@ -10,6 +10,11 @@ loki:
       endpoint: s3.us-east-2.amazonaws.com
       region: us-east-2
 
+backend:
+  persistence:
+    enableStatefulSetAutoDeletePVC: false
+
+
 minio:
   enabled: false
 
