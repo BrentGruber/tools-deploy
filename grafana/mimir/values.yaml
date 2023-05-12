@@ -45,10 +45,6 @@ metaMonitoring:
     enabled: true
   serviceMonitor:
     enabled: true
-  prometheusRule:
-    enabled: true
-    mimirAlerts: true
-    mimirRules: true
   grafanaAgent:
     enabled: true
     logs:
