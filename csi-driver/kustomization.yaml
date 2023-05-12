@@ -2,6 +2,9 @@ generators:
 - helm-chart.yaml
 
 # policy/v1beta1 was removed in eks 1.25
+# The helm chart is supposed to pick the correct version
+# based on the version of kubernetes it is targeting
+# but for some reason it doesn't
 patchesJson6902:
   - target:
       kind: 'PodDisruptionBudget'

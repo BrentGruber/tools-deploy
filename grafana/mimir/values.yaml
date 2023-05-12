@@ -41,6 +41,8 @@ mimir:
         endpoint: s3.us-east-2.amazonaws.com
 
 metaMonitoring:
+  dashboards:
+    enabled: true
   grafanaAgent:
     enabled: true
     logs:
@@ -49,7 +51,5 @@ metaMonitoring:
         url: http://loki-gateway.monitoring.svc.cluster.local/loki/api/v1/push
     metrics:
       enabled: true
-      labels:
-        agent: grafana-agent-metrics
 
 
