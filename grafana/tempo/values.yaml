@@ -1,3 +1,7 @@
+tempo:
+  pdb:
+    apiVersion: policy/v1 
+
 serviceAccount:
   create: false
   name: tempo
