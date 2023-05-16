@@ -45,3 +45,8 @@ datasources:
       url: http://loki-gateway.monitoring.svc.cluster.local
       jsonData:
         tlsSkipVerify: true
+    - name: Tempo
+      type: tempo
+      url: http://tempo-gateway.monitoring.svc.cluster.local
+      jsonData:
+        tlsSkipVerify: true
