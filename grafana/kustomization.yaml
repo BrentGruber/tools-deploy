@@ -4,5 +4,6 @@ resources:
   - ./grafana
   - ./loki
   - ./mimir
+  - ./tempo
 
 namespace: monitoring

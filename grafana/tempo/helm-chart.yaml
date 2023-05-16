@@ -1,0 +1,9 @@
+apiVersion: builtin
+kind: HelmChartInflationGenerator
+metadata:
+  name: tempo
+name: tempo-distributed
+namespace: monitoring
+releaseName: tempo
+repo: https://grafana.github.io/helm-charts
+valuesFile: values.yaml

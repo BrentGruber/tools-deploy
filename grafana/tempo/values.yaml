@@ -1,0 +1,59 @@
+serviceAccount:
+  create: false
+  name: tempo
+
+ingester:
+  persistence:
+    enabled: true
+
+metricsGenerator:
+  enabled: true
+  config:
+    storage:
+      remote_write:
+        - url: http://mimir-nginx.monitoring.svc.cluster.local/api/v1/push
+
+traces:
+  otlp:
+    http:
+      enabled: true
+    grpc:
+      enabled: true
+
+storage:
+  trace:
+    backend: s3
+    s3:
+      bucket: tempo-bomdemo-dev-5e38d0a
+      endpoint: s3.us-east-2.amazonaws.com
+
+gateway:
+  enabled: true
+  ingress:
+    enabled: true
+    annotations: {
+      kubernetes.io/ingress.class: nginx,
+      cert-manager.io/cluster-issuer: letsencrypt
+    }
+    hosts:
+      - host: tempo-gateway.tools.bomdemo.com
+        paths:
+          - path: /
+            pathType: Prefix
+    tls:
+      - secretName: tempo-cert
+        hosts:
+          - tempo-gateway.tools.bomdemo.com
+
+metaMonitoring:
+  serviceMonitor:
+    enabled: true
+    namespace: monitoring
+  grafanaAgent:
+    enabled: true
+    logs:
+      remote:
+        url: http://loki-gateway.monitoring.svc.cluster.local/loki/api/v1/push
+    metrics:
+      remote:
+        url: http://mimir-nginx.monitoring.svc.cluster.local/api/v1/push
