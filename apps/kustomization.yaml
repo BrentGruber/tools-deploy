@@ -5,6 +5,7 @@ resources:
   - bom.yaml
   - cert-manager.yaml
   - csi-driver.yaml
+  - cilium.yaml
   - doppler-operator.yaml
   - external-dns.yaml
   - grafana.yaml

@@ -1,0 +1,17 @@
+serviceAccounts:
+  cilium:
+    create: false
+    name: cilium
+
+eni:
+  enabled: true
+ipam:
+  mode: eni
+egressMasqueradeInterfaces: eth0
+tunnel: disabled
+
+hubble:
+  ui:
+    enabled: true
+  relay:
+    enabled: true

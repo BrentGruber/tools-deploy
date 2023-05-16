@@ -1,0 +1,10 @@
+# https://github.com/kubernetes-sigs/kustomize/issues/4593
+apiVersion: builtin
+kind: HelmChartInflationGenerator
+metadata:
+  name: cilium
+name: cilium
+namespace: cilium
+releaseName: cilium
+repo: https://helm.cilium.io/
+valuesFile: values.yaml
