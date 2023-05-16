@@ -8,7 +8,7 @@ generators:
 patchesJson6902:
   - target:
       kind: 'PodDisruptionBudget'
-      name: 'ebs-csi-controller'
+      name: 'tempo-ingester'
       version: v1beta1
     patch: |-
       - op: replace
