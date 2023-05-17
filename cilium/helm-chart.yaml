@@ -4,7 +4,7 @@ kind: HelmChartInflationGenerator
 metadata:
   name: cilium
 name: cilium
-namespace: cilium
+namespace: kube-system
 releaseName: cilium
 repo: https://helm.cilium.io/
 valuesFile: values.yaml

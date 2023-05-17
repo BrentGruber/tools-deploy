@@ -2,4 +2,4 @@
 generators:
 - helm-chart.yaml
 
-namespace: cilium
+namespace: kube-system
