@@ -1,3 +1,7 @@
+resources:
+  - clusterrole.yaml
+  - clusterrolebinding.yaml
+
 generators:
 - helm-chart.yaml
 
