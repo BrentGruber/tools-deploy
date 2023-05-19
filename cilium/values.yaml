@@ -1,7 +1,10 @@
 serviceAccounts:
   cilium:
-    create: false
+    create: true
     name: cilium
+    annotations: {
+      eks.amazonaws.com/role-arn: arn:aws:iam::593393184947:role/cilium-c6175a5
+    }
 
 eni:
   enabled: true
