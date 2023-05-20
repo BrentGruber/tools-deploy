@@ -21,6 +21,7 @@ hubble:
       - tcp
       - flow
       - icmp
+      - "policy:sourceContext=app|workload-name|pod|reserved-identity;destinationContext=app|workload-name|pod|dns|reserved-identity;labelsContext=source_namespace,destination_namespace"
       - "httpV2:sourceContext=workload-name|pod-name|reserved-identity;destinationContext=workload-name|pod-name|reserved-identity;labelsContext=source_namespace,destination_namespace,traffic_direction"
       - "kafka:sourceContext=workload-name|pod-name|reserved-identity;destinationContext=workload-name|pod-name|reserved-identity;labelsContext=source_namespace,destination_namespace,traffic_direction"
     enableOpenMetrics: true
@@ -32,6 +33,8 @@ hubble:
     dashboards:
       enabled: true
       namespace: monitoring
+      label: grafana_dashboard
+      labelValue: "1"
   ui:
     enabled: true
     ingress:
@@ -48,3 +51,11 @@ hubble:
             - hubble.tools.bomdemo.com
   relay:
     enabled: true
+
+prometheus:
+  enabled: true
+  serviceMonitor:
+    enabled: true
+    labels: {
+      instance: primary
+    }
