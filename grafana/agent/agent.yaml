@@ -187,8 +187,6 @@ spec:
     - docker: {}
   namespaceSelector:
     matchNames:
-    - monitoring
     - bom
-    - '*'
   selector:
     matchLabels: {}
