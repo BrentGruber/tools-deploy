@@ -8,3 +8,6 @@ namespace: kube-system
 releaseName: cilium
 repo: https://helm.cilium.io/
 valuesFile: values.yaml
+apiVersions: 
+  - monitoring.grafana.com/v1alpha1/MetricsInstance
+  - monitoring.coreos.com/v1/ServiceMonitor
