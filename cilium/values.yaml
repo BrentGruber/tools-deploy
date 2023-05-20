@@ -16,5 +16,17 @@ tunnel: disabled
 hubble:
   ui:
     enabled: true
+    ingress:
+      enabled: true
+      annotations: {
+        kubernetes.io/ingress.class: nginx,
+        cert-manager.io/cluster-issuer: letsencrypt
+      }
+      hosts:
+        - hubble.tools.bomdemo.com
+      tls:
+        - secretName: hubble-cert
+          hosts:
+            - hubble.tools.bomdemo.com
   relay:
     enabled: true
