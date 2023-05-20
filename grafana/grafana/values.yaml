@@ -29,6 +29,9 @@ sidecar:
     label: grafana_dashboard
     labelValue: "1"
 
+plugins:
+  - isovalent-hubble-datasource
+
 # Configure Grafana data sources
 datasources:
   datasources.yaml:
