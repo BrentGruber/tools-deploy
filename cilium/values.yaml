@@ -58,6 +58,15 @@ hubble:
           hosts:
             - hubble.tools.bomdemo.com
 
+operator:
+  prometheus:
+    enabled: true
+    serviceMonitor:
+      enabled: true
+      labels: {
+        instance: primary
+      }
+
 prometheus:
   enabled: true
   serviceMonitor:
