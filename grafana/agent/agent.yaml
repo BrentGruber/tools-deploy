@@ -181,12 +181,13 @@ metadata:
   labels:
     instance: primary
   name: kubernetes-pods
-  namespace: default
+  namespace: monitoring
 spec:
   pipelineStages:
     - docker: {}
   namespaceSelector:
     matchNames:
+    - bom
     - '*'
   selector:
     matchLabels: {}
