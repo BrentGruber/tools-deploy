@@ -57,8 +57,6 @@ hubble:
         - secretName: hubble-cert
           hosts:
             - hubble.tools.bomdemo.com
-  relay:
-    enabled: true
 
 prometheus:
   enabled: true
