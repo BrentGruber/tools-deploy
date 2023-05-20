@@ -103,7 +103,6 @@ rules:
   - endpoints
   - pods
   - events
-  - namespaces
   verbs:
   - get
   - list
@@ -135,7 +134,7 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: grafana-agent
-  namespace: default
+  namespace: monitoring
 
 ---
 
