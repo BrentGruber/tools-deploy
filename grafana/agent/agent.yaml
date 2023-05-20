@@ -186,6 +186,6 @@ spec:
     - docker: {}
   namespaceSelector:
     matchNames:
-    - bom
+    - '*'
   selector:
     matchLabels: {}
