@@ -11,7 +11,7 @@ patches:
   - target:
       kind: Service
     patch: |-
-      - op: add
+      - op: replace
         path: metadata/annotations/service.cilium.io~1lb-l7
         value: enabled
 
