@@ -58,6 +58,10 @@ hubble:
           hosts:
             - hubble.tools.bomdemo.com
 
+loadBalancer:
+  l7:
+    backend: envoy
+
 operator:
   prometheus:
     enabled: true
