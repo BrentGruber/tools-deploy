@@ -20,17 +20,5 @@ patches:
       - op: add
         path: /spec/template/metadata/annotations/policy.cilium.io~1proxy-visibility
         value: "<Egress/53/UDP/DNS>,<Egress/80/TCP/HTTP>"
-  - target:
-      kind: StatefulSet
-    patch: |-
-      - op: add
-        path: /spec/template/metadata/annotations/policy.cilium.io~1proxy-visibility
-        value: "<Egress/53/UDP/DNS>,<Egress/80/TCP/HTTP>"
-  - target:
-      kind: DaemonSet
-    patch: |-
-      - op: add
-        path: /spec/template/metadata/annotations/policy.cilium.io~1proxy-visibility
-        value: "<Egress/53/UDP/DNS>,<Egress/80/TCP/HTTP>"
 
 namespace: monitoring
