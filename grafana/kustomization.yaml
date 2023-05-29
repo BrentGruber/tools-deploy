@@ -14,11 +14,5 @@ patches:
       - op: replace
         path: /metadata/annotations/service.cilium.io~1lb-l7
         value: enabled
-  - target:
-      kind: Deployment
-    patch: |-
-      - op: add
-        path: /spec/template/metadata/annotations/policy.cilium.io~1proxy-visibility
-        value: "<Egress/53/UDP/DNS>,<Egress/80/TCP/HTTP>"
 
 namespace: monitoring
