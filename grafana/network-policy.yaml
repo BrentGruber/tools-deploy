@@ -2,7 +2,31 @@ apiVersion: cilium.io/v2
 kind: CiliumNetworkPolicy
 metadata:
   name: monitoring
+  namespace: monitoring
 spec:
   endpointSelector: {}
-  ingress: {}
-  egress: {}
+  ingress:
+    - fromEndpoints:
+        - {}
+    - fromEntities:
+        - world
+    - fromEntities:
+        - cluster
+  egress:
+    - toEntities:
+        - world
+    - toEndpoints:
+        - {}
+    - toEntities:
+        - cluster
+    - toEndpoints:
+        - matchLabels:
+            io.kubernetes.pod.namespace: kube-system
+            k8s-app: kube-dns
+      toPorts:
+        - ports:
+            - port: "53"
+              protocol: UDP
+          rules:
+            dns:
+              - matchPattern: "*"
