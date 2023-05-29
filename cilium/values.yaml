@@ -78,3 +78,7 @@ prometheus:
     labels: {
       instance: primary
     }
+
+endpointStatus:
+  enabled: true
+  status: policy
